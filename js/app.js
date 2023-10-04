@@ -1,3 +1,5 @@
+window.addEventListener('deviceorientation', handleOrientation);
+
 document.addEventListener('mousemove', e => {
     Object.assign(document.documentElement, {
         style: `
@@ -7,7 +9,7 @@ document.addEventListener('mousemove', e => {
     })
 })
 
-window.addEventListener('deviceorientation', handleOrientation);
+
 
 function handleOrientation(event) {
     const beta = event.beta || 0; // Угол наклона устройства по оси X
