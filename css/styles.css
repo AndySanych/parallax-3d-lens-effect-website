@@ -6,7 +6,9 @@
 
 :root {
   --index: calc(1vw + 1vh);
-  --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+  --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+  --move-x: 0deg;
+  --move-y: 0deg;
 }
 
 @font-face {
@@ -27,7 +29,7 @@ body {
 }
 
 .logo {
-    --logo-size: calc(var(--index) * 7.8);
+  --logo-size: calc(var(--index) * 7.8);
   width: calc(var(--logo-size));
   height: calc(var(--logo-size));
   background-repeat: no-repeat;
@@ -86,41 +88,43 @@ body {
 }
 
 .hero-content {
-    font-size: calc(var(--index) * 2.9);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: calc(var(--index) * -.15);
-    line-height: 1.35em;
-    margin-top: calc(var(--index) * 5.5);
+  font-size: calc(var(--index) * 2.9);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: calc(var(--index) * -0.15);
+  line-height: 1.35em;
+  margin-top: calc(var(--index) * 5.5);
 }
 
 .hero-content span {
-    display: block;
+  display: block;
 }
 
 .hero-content__p {
-    text-transform: none;
-    font-family: merriweather-italic-3d;
-    letter-spacing: normal;
-    font-size: calc(var(--index) * .73);
-    line-height: 3;
+  text-transform: none;
+  font-family: merriweather-italic-3d;
+  letter-spacing: normal;
+  font-size: calc(var(--index) * 0.73);
+  line-height: 3;
 }
 
 .button-start {
-    font-family: Arial;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: calc(var(--index) * .71);
-    letter-spacing: -.02vw;
-    padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
-    background-color: transparent;
-    color: white;
-    border-radius: 10em;
-    border: rgb(255 255 255 / .4) 3px solid;
-    outline: none;
-    cursor: pointer;
+  font-family: Arial;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 0.71);
+  letter-spacing: -0.02vw;
+  padding: calc(var(--index) * 0.7) calc(var(--index) * 1.25);
+  background-color: transparent;
+  color: white;
+  border-radius: 10em;
+  border: rgb(255 255 255 / 0.4) 3px solid;
+  outline: none;
+  cursor: pointer;
 }
 
-.layer-4, .layer-5, .layer-6 {
-    pointer-events: none;
+.layer-4,
+.layer-5,
+.layer-6 {
+  pointer-events: none;
 }
