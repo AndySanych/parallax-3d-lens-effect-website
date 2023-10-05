@@ -7,8 +7,8 @@ function handleOrientation(event) {
     const beta = event.beta || 0;
     const gamma = event.gamma || 0;
 
-    const moveX = (gamma - 90) * -0.5;
-    const moveY = (beta - 90) * -1;
+    const moveX = (gamma - 90) * -0.005;
+    const moveY = (beta - 90) * -0.01;
 
     document.documentElement.style.setProperty('--move-x', `${moveX}deg`);
     document.documentElement.style.setProperty('--move-y', `${moveY}deg`);
