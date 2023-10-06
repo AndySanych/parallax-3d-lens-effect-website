@@ -8,7 +8,7 @@ function handleOrientation(event) {
     const gamma = event.gamma || 0;
 
     // Множитель для уменьшения чувствительности
-    const sensitivityMultiplier = 0.3;
+    const sensitivityMultiplier = 0.1;
 
     const moveX = (gamma - 90) * -0.5 * sensitivityMultiplier;
     const moveY = (beta - 90) * -1 * sensitivityMultiplier;
