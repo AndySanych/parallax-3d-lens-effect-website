@@ -7,11 +7,8 @@ function handleOrientation(event) {
     const beta = event.beta || 0;
     const gamma = event.gamma || 0;
 
-    // Множитель для уменьшения чувствительности
-    const sensitivityMultiplier = 0.1;
-
-    const moveX = (gamma - 90) * -0.5 * sensitivityMultiplier;
-    const moveY = (beta - 90) * -1 * sensitivityMultiplier;
+    const moveX = (gamma - 90) * -0.05;
+    const moveY = (beta - 90) * -0.1;
 
     document.documentElement.style.setProperty('--move-x', `${moveX}deg`);
     document.documentElement.style.setProperty('--move-y', `${moveY}deg`);
